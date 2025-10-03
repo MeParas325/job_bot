@@ -73,7 +73,7 @@ def check_jobs():
         send_to_telegram(msg)
 
 
-if _name_ == "_main_":
+if __name__ == "_main_":
     print("🚀 Auto Job Tracker Started...\n")
     while True:
         check_jobs()
