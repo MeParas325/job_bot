@@ -1,11 +1,9 @@
 import requests
 import time
 
-# ✅ तेरा Bot Token और Chat ID
 TELEGRAM_TOKEN = "7759695922:AAGlvkW9TAYC1kjtp4CDU3BkVe0X5fIgN1M"
 CHAT_ID = "1390912843"
 
-# पहले भेजी गई jobs store करने के लिए
 sent_jobs = set()
 
 def send_to_telegram(message):
@@ -71,6 +69,7 @@ def check_jobs():
         for title, link in new_lever:
             msg += f"• <a href='{link}'>{title}</a>\n"
         send_to_telegram(msg)
+
 
 print("🚀 Auto Job Tracker Started...\n")
 while True:
