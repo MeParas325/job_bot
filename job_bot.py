@@ -72,10 +72,8 @@ def check_jobs():
             msg += f"• <a href='{link}'>{title}</a>\n"
         send_to_telegram(msg)
 
-
-if __name__ == "_main_":
-    print("🚀 Auto Job Tracker Started...\n")
-    while True:
-        check_jobs()
-        print("✅ Checked for new jobs. Waiting 30 mins...")
-        time.sleep(1800)  # 30 minutes (1800 sec)
+print("🚀 Auto Job Tracker Started...\n")
+while True:
+    check_jobs()
+    print("✅ Checked for new jobs. Waiting 30 mins...")
+    time.sleep(1800)  # 30 minutes (1800 sec)
